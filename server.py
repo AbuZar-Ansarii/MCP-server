@@ -39,4 +39,5 @@ def send_email(receiver: str, subject: str, content: str) -> str:
         return f"❌ Failed to send email: {e}"
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport ='http', host ='0.0.0.0', port =8000)
+
